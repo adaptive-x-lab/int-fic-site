@@ -17,9 +17,9 @@ namespace IntFicSite.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            return new JsonResult("OK - IntFic.Site is your friend :)");
         }
     }
 }

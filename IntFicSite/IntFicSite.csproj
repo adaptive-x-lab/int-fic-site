@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>27a0143c-2c09-4582-b1a5-d7cb48498824</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/6c5dc104-728e-4d62-9b1f-5f0580917383/resourceGroups/ChooseYourOwnPath/providers/microsoft.insights/components/ChooseYourOwnPath</ApplicationInsightsResourceId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.14.0" />
+  </ItemGroup>
 
 </Project>

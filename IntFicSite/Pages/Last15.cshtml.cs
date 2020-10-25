@@ -9,8 +9,15 @@ namespace IntFicSite.Pages
 {
     public class Last15Model : PageModel
     {
-        public void OnGet()
+        [BindProperty(SupportsGet = true)]
+        public string Node { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string Session { get; set; }
+
+        public IActionResult OnGet()
         {
+            return new JsonResult(new {satus = "OK",site="Last15", node=Node,session=Session});
         }
     }
 }
